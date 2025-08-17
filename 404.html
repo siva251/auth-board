@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; URL='./index.html'" />
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Redirect to index.html while preserving the path
+      (function () {
+        var redirectTo = window.location.protocol + "//" + window.location.host + window.location.pathname.replace(/\/404\.html$/, "") + window.location.search + window.location.hash;
+        window.location.replace(redirectTo);
+      })();
+    </script>
   </head>
-  <body></body>
+  <body>
+    <p>Redirecting...</p>
+  </body>
 </html>
