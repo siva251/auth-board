@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/auth-board/static/css/main.4dccbabd.css",
-    "main.js": "/auth-board/static/js/main.925528c1.js",
+    "main.js": "/auth-board/static/js/main.083d207a.js",
     "static/js/944.5478d893.chunk.js": "/auth-board/static/js/944.5478d893.chunk.js",
     "static/js/161.501c3a9a.chunk.js": "/auth-board/static/js/161.501c3a9a.chunk.js",
     "static/js/93.4cb8c574.chunk.js": "/auth-board/static/js/93.4cb8c574.chunk.js",
@@ -12,7 +12,7 @@
     "static/media/loadingGif.gif": "/auth-board/static/media/loadingGif.28f0b63baee0f549bbe5.gif",
     "index.html": "/auth-board/index.html",
     "main.4dccbabd.css.map": "/auth-board/static/css/main.4dccbabd.css.map",
-    "main.925528c1.js.map": "/auth-board/static/js/main.925528c1.js.map",
+    "main.083d207a.js.map": "/auth-board/static/js/main.083d207a.js.map",
     "944.5478d893.chunk.js.map": "/auth-board/static/js/944.5478d893.chunk.js.map",
     "161.501c3a9a.chunk.js.map": "/auth-board/static/js/161.501c3a9a.chunk.js.map",
     "93.4cb8c574.chunk.js.map": "/auth-board/static/js/93.4cb8c574.chunk.js.map",
@@ -23,6 +23,6 @@
   },
   "entrypoints": [
     "static/css/main.4dccbabd.css",
-    "static/js/main.925528c1.js"
+    "static/js/main.083d207a.js"
   ]
 }
