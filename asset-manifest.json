@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/auth-board/static/css/main.4dccbabd.css",
-    "main.js": "/auth-board/static/js/main.d93c429c.js",
-    "static/js/944.5478d893.chunk.js": "/auth-board/static/js/944.5478d893.chunk.js",
-    "static/js/161.37d7ea15.chunk.js": "/auth-board/static/js/161.37d7ea15.chunk.js",
+    "main.css": "/auth-board/static/css/main.dc63bad9.css",
+    "main.js": "/auth-board/static/js/main.6a70a64a.js",
+    "static/js/944.523b7059.chunk.js": "/auth-board/static/js/944.523b7059.chunk.js",
+    "static/js/161.edb62631.chunk.js": "/auth-board/static/js/161.edb62631.chunk.js",
     "static/js/93.4cb8c574.chunk.js": "/auth-board/static/js/93.4cb8c574.chunk.js",
     "static/js/900.bf794fa9.chunk.js": "/auth-board/static/js/900.bf794fa9.chunk.js",
     "static/js/825.9be79130.chunk.js": "/auth-board/static/js/825.9be79130.chunk.js",
@@ -11,10 +11,10 @@
     "static/js/474.179a93a1.chunk.js": "/auth-board/static/js/474.179a93a1.chunk.js",
     "static/media/loadingGif.gif": "/auth-board/static/media/loadingGif.28f0b63baee0f549bbe5.gif",
     "index.html": "/auth-board/index.html",
-    "main.4dccbabd.css.map": "/auth-board/static/css/main.4dccbabd.css.map",
-    "main.d93c429c.js.map": "/auth-board/static/js/main.d93c429c.js.map",
-    "944.5478d893.chunk.js.map": "/auth-board/static/js/944.5478d893.chunk.js.map",
-    "161.37d7ea15.chunk.js.map": "/auth-board/static/js/161.37d7ea15.chunk.js.map",
+    "main.dc63bad9.css.map": "/auth-board/static/css/main.dc63bad9.css.map",
+    "main.6a70a64a.js.map": "/auth-board/static/js/main.6a70a64a.js.map",
+    "944.523b7059.chunk.js.map": "/auth-board/static/js/944.523b7059.chunk.js.map",
+    "161.edb62631.chunk.js.map": "/auth-board/static/js/161.edb62631.chunk.js.map",
     "93.4cb8c574.chunk.js.map": "/auth-board/static/js/93.4cb8c574.chunk.js.map",
     "900.bf794fa9.chunk.js.map": "/auth-board/static/js/900.bf794fa9.chunk.js.map",
     "825.9be79130.chunk.js.map": "/auth-board/static/js/825.9be79130.chunk.js.map",
@@ -22,7 +22,7 @@
     "474.179a93a1.chunk.js.map": "/auth-board/static/js/474.179a93a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4dccbabd.css",
-    "static/js/main.d93c429c.js"
+    "static/css/main.dc63bad9.css",
+    "static/js/main.6a70a64a.js"
   ]
 }
