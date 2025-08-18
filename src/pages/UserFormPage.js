@@ -5,9 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import Loader from "../components/Loader";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
-
 import { AiOutlineInfoCircle } from "react-icons/ai";
-
 
 const validationSchema = Yup.object({
   email: Yup.string()
@@ -42,7 +40,6 @@ const UserFormPage = () => {
     if (params.id) {
       dispatch(loadUser(params.id));
     } else {
-      // Clear the selected user state when navigating to the create page
       dispatch(clearSelectedUser());
     }
   }, [dispatch, params.id]);
@@ -82,7 +79,7 @@ const UserFormPage = () => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ">
+    <div className="max-w-md md:max-w-5xl mx-auto p-4 sm:p-6 lg:p-8 py-8 ">
       {isProcessingAction && <Loader />}
       <div className="bg-white rounded-lg shadow-xl overflow-hidden dark:bg-gray-800">
         <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
@@ -189,16 +186,16 @@ const UserFormPage = () => {
                   </label>
                 </div>
 
-                <div className="flex justify-between gap-3 mt-4">
+                <div className="flex flex-col sm:flex-row justify-between gap-3 mt-4">
                   <button
                     type="button"
-                    className="px-4 py-2 rounded-lg border border-gray-400 bg-white text-gray-700 hover:bg-gray-100 transition-colors duration-300 ease-in-out dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:hover:bg-gray-600"
+                    className="w-full sm:w-auto px-4 py-2 rounded-lg border border-gray-400 bg-white text-gray-700 hover:bg-gray-100 transition-colors duration-300 ease-in-out dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:hover:bg-gray-600"
                     onClick={() => navigate("/users")}
                   >
                     Cancel
                   </button>
                   <button
-                    className="px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300 ease-in-out"
+                    className="w-full sm:w-auto px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300 ease-in-out"
                     type="submit"
                     disabled={isSubmitting}
                   >
