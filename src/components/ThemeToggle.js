@@ -11,7 +11,7 @@ const ThemeToggle = () => {
   };
 
   return (
-    <div className="fixed top-6 right-6 md:top-10 md:right-10 z-50">
+    <div className="fixed top-2 right-2 md:top-10 md:right-10 z-50">
       <button
         onClick={handleToggle}
         className="relative flex flex-col items-center"
@@ -33,7 +33,7 @@ const ThemeToggle = () => {
         {/* Bulb OUTSIDE (moved up) */}
         <div
           className={`-mt-2 w-8 h-8 rounded-full transition-all duration-500 ease-in-out
-                      ${isDarkMode
+                     ${isDarkMode
                         ? "bg-yellow-300 shadow-[0_0_50px_15px_rgba(253,224,71,0.8)]"
                         : "bg-gray-300 shadow-none"}`}
         />

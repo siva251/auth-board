@@ -7,24 +7,25 @@ const UserRow = memo(({ user, onDelete }) => {
   const [imgSrc, setImgSrc] = React.useState(avatarSrc);
 
   const handleImageError = () => {
-    setImgSrc(`https://ui-avatars.com/api/?name=${user.first_name}+${user.last_name}&background=random&color=fff`);
+    setImgSrc(
+      `https://ui-avatars.com/api/?name=${user.first_name}+${user.last_name}&background=random&color=fff`
+    );
   };
 
   return (
-    // On small screens, this will act as a block element
-    // On medium and larger screens, it will be a table row
     <tr className="border-b border-gray-200 dark:border-gray-700 block md:table-row mb-4 md:mb-0">
-      {/* Container for user details on mobile */}
-      <td className="p-4 block md:table-cell w-full md:w-[20%]">
-        <div className="flex flex-col sm:flex-row items-center gap-4">
+      <td className="p-4 block md:table-cell w-full md:w-[50px] align-middle">
+        <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-0">
           <img
             src={imgSrc}
-            alt={`Profile picture of ${user.first_name} ${user.last_name}`}
-            className="w-24 h-24 rounded-full"
+            alt={`${user.first_name} ${user.last_name}`}
+            className="w-24 h-24 md:w-24 md:h-24 rounded-full"
             onError={handleImageError}
           />
-          <div className="flex flex-col text-center sm:text-left">
-            <span className="text-xl font-bold dark:text-white">{user.first_name} {user.last_name}</span>
+          <div className="flex flex-col text-center sm:text-left md:hidden">
+            <span className="text-xl font-bold dark:text-white">
+              {user.first_name} {user.last_name}
+            </span>
             <a
               href={`mailto:${user.email}`}
               className="text-blue-600 hover:underline dark:text-blue-400"
@@ -35,10 +36,24 @@ const UserRow = memo(({ user, onDelete }) => {
         </div>
       </td>
 
-      {/* Empty cells to maintain desktop table structure */}
-      <td className="hidden md:table-cell p-4 w-[20%]"></td>
-      <td className="hidden md:table-cell p-4 w-[20%] dark:text-white">{user.first_name}</td>
-      <td className="hidden md:table-cell p-4 w-[20%] dark:text-white">{user.last_name}</td>
+      <td className="hidden md:table-cell p-4 w-[25%] dark:text-white">
+        <a
+          href={`mailto:${user.email}`}
+          className="text-blue-600 hover:underline dark:text-blue-400"
+        >
+          {user.email}
+        </a>
+      </td>
+
+      {/* First Name column */}
+      <td className="hidden md:table-cell p-4 w-[20%] dark:text-white">
+        {user.first_name}
+      </td>
+
+      {/* Last Name column */}
+      <td className="hidden md:table-cell p-4 w-[20%] dark:text-white">
+        {user.last_name}
+      </td>
 
       {/* Action buttons */}
       <td className="p-4 block md:table-cell w-full md:w-[20%]">
@@ -73,6 +88,6 @@ UserRow.propTypes = {
   onDelete: PropTypes.func.isRequired,
 };
 
-UserRow.displayName = 'UserRow';
+UserRow.displayName = "UserRow";
 
 export default UserRow;
